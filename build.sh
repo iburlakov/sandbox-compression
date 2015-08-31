@@ -7,7 +7,7 @@ cd embedded
 
 export AS="as -arch i386"
 export CC="clang -arch i386 -mmacosx-version-min=10.6"
-mkbundle -o sandbox-compression --machine-config /Library/Frameworks/Mono.framework/Versions/3.2.4/etc/mono/2.0/machine.config --nodeps -z ../sandbox-compression.exe ../../../ext/ICSharpCode.SharpZipLib.dll System.dll System.Configuration.dll System.Security.dll /Library/Frameworks/Mono.framework/Versions/3.2.4/lib/mono/4.5/mscorlib.dll
+mkbundle -o sandbox-compression --machine-config /Library/Frameworks/Mono.framework/Versions/3.2.4/etc/mono/2.0/machine.config --nodeps -z ../sandbox-compression.exe ../../../ext/ICSharpCode.SharpZipLib.dll System.dll System.Configuration.dll System.Xml.dll System.Security.dll Mono.Security.dll /Library/Frameworks/Mono.framework/Versions/3.2.4/lib/mono/4.5/mscorlib.dll
 
 rm -R sandbox-compression.dSYM
 
